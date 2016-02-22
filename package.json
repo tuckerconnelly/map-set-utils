@@ -1,15 +1,18 @@
 {
   "name": "map-set-utils",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "description": "Utilities for ES2015 Map and Set",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "babel ./src --out-dir ./lib",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tuckerconnelly/uranium.git"
+    "url": "https://github.com/tuckerconnelly/map-set-utils.git"
   },
-  "homepage": "https://github.com/tuckerconnelly/uranium.git",
+  "homepage": "https://github.com/tuckerconnelly/map-set-utils.git",
   "keywords": [
     "Map",
     "Set",
@@ -19,16 +22,16 @@
   "author": "Tucker Connelly <web@tuckerconnelly.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.4.0",
     "babel-core": "^6.4.0",
     "babel-eslint": "^4.1.8",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^5.0.0",
-    "eslint-plugin-babel": "^3.1.0"
+    "eslint-plugin-babel": "^3.1.0",
+    "eslint-plugin-react": "^3.16.1"
   },
-  "peerDependencies": {
-  },
-  "dependencies": {
-  }
+  "peerDependencies": {},
+  "dependencies": {}
 }
