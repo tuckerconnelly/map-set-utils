@@ -1,5 +1,5 @@
 {
-  "name": "mapset-utils",
+  "name": "map-set-utils",
   "version": "0.0.0",
   "description": "Utilities for ES2015 Map and Set",
   "main": "src/index.js",
